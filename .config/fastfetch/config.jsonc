@@ -1,0 +1,45 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "right": 1,
+            "left": 3
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": {
+            "separator": "white",
+            "keys": "blue"
+        }
+    },
+    "modules": [
+        {
+            "type": "title"
+        },
+        {
+            "type":"separator"
+        },
+        {
+            "key": "distro",
+            "type": "os"
+        },
+        {
+            "key": "shell",
+            "type": "shell"
+        },
+        {
+            "key": "terminal",
+            "type": "terminal"
+        },
+        {
+            "key": "memory",
+            "type": "memory"
+        },
+        {
+            "type": "loadavg",
+            "key": "loadavg"
+        }
+    ]
+}
