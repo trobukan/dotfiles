@@ -13,7 +13,7 @@ sudo dnf install -y git snow
 ## Installation
 1. Clone this repository into your `$HOME` directory:
 ```bash
-git clone git@github.com:trobukan/dotfiles.git
+git clone --recurse-submodules git@github.com:trobukan/dotfiles.git
 ```
 2. Change into the dotfiles directory:
 ```bash
