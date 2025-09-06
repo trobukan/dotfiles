@@ -1,13 +1,12 @@
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
+if [ ! -d "$ZINIT_HOME" ]; then
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+source "${ZINIT_HOME}/zinit.zsh"
 fastfetch
-export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="clean"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
-# | > USER CONFIG < |
-export LANG=en_US.UTF-8
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -15,9 +14,8 @@ else
   export EDITOR='nvim'
 fi
 
-
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
+alias zshconf="vim ~/.zshrc"
 
 alias update="sudo dnf update -y && sudo dnf upgrade -y"
 alias ls="ls --color=auto"
