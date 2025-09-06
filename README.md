@@ -3,11 +3,8 @@ These are my personal dotfiles managed with [GNU Stow](https://www.gnu.org/softw
 
 ## Requirements
 Before using these dotfiles, make sure you have the followings packages installed:
-- **git** 
-- **stow** 
-
 ```bash 
-sudo dnf install -y git snow
+sudo dnf install -y git stow
 ```
 
 ## Installation
