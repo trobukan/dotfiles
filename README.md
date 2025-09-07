@@ -10,7 +10,7 @@ sudo dnf install -y git stow
 ## Installation
 1. Clone this repository into your `$HOME` directory:
 ```bash
-git clone --recurse-submodules git@github.com:trobukan/dotfiles.git
+git clone --recurse-submodules git@github.com:trobukan/dotfiles.git ~/dotfiles
 ```
 2. Change into the dotfiles directory:
 ```bash
