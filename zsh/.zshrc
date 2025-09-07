@@ -70,3 +70,5 @@ export PGK_CONFIG_PATH="/usr/lib64/pkgconfig:$PGK_CONFIG_PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(zoxide init --cmd cd zsh)"
