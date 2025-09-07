@@ -18,5 +18,5 @@ cd ~/dotfiles
 ```
 3. Apply the dotfiles using stow:
 ```bash
-stow . -t ~
+stow kitty nvim zde fastfetch zsh
 ```
