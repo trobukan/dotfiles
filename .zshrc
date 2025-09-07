@@ -50,6 +50,21 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gl="git pull"
 
+# > | KEYBINDINGS | <
+bindkey -e
+
+# > | HISTORY | <
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+
+# > | OTHERS | <
 export PAT="$PATH:$HOME/go/bin"
 export PGK_CONFIG_PATH="/usr/lib64/pkgconfig:$PGK_CONFIG_PATH"
 
