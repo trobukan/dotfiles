@@ -44,12 +44,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 # > | GIT CONFIGS | <
-alias gst="git status"
-alias gco="git checkout"
-alias gcm="git commit -m"
-alias gp="git push"
-alias gl="git pull"
-
+zinit snippet OMZP::git
 # > | KEYBINDINGS | <
 bindkey -e
 
