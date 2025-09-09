@@ -1,0 +1,7 @@
+[user]
+	email = trobukan@gmail.com
+	name = trobukan
+[color]
+	ui = auto
+[pull]
+	rebase = true
