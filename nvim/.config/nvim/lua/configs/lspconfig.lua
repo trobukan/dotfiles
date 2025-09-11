@@ -41,7 +41,6 @@ local servers = {
             vim.fn.expand "$VIMRUNTIME/lua/vim/lsp",
             vim.fn.expand "data" .. "/lazy/ui/nvchad_types",
             vim.fn.expand "data" .. "/lazy/lazy.nvim/lua/lazy",
-            "{3rd}/luv/library",
           },
           userThirdParty = { os.getenv "HOME" .. ".local/share/LuaAddons" },
           checkThirdParty = "Apply",
