@@ -38,9 +38,6 @@ local servers = {
         workspace = {
           library = {
             vim.fn.expand "$VIMRUNTIME/lua",
-            vim.fn.expand "$VIMRUNTIME/lua/vim/lsp",
-            vim.fn.expand "data" .. "/lazy/ui/nvchad_types",
-            vim.fn.expand "data" .. "/lazy/lazy.nvim/lua/lazy",
           },
           userThirdParty = { os.getenv "HOME" .. ".local/share/LuaAddons" },
           checkThirdParty = "Apply",
