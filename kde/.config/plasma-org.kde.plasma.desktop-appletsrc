@@ -17,12 +17,16 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][1][General]
-positions={"1024x768":[],"1829x1029":[],"1920x1080":["1","17"]}
+positions={"1024x768":["1","9"],"1829x1029":[],"1920x1080":["1","17"]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/joao/Pictures/Wallpapers/Yozilo Wallpapers/gradient-wallpapers-La94rBjrNls-unsplash.jpg
+Image=file:///home/joao/Pictures/Wallpapers/Yozilo Wallpapers/gradient-wallpapers-La94rBjrNls-unsplash.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][30]
@@ -48,7 +52,7 @@ DialogWidth=720
 
 [Containments][30][Applets][100][Configuration][General]
 iconSpacing=0
-launchers=applications:app.zen_browser.zen.desktop,applications:org.kde.discover.desktop,applications:code.desktop,applications:steam.desktop,file:///var/lib/flatpak/exports/share/applications/com.jetbrains.GoLand.desktop,applications:md.obsidian.Obsidian.desktop,applications:es.danirod.Cartero.desktop,applications:Aseprite.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:Godot Engine.desktop,applications:org.kde.krita.desktop,applications:org.inkscape.Inkscape.desktop,file:///var/lib/flatpak/exports/share/applications/net.blockbench.Blockbench.desktop,applications:firealpaca.desktop,file:///var/lib/flatpak/exports/share/applications/com.icons8.Lunacy.desktop,file:///var/lib/flatpak/exports/share/applications/dev.vencord.Vesktop.desktop
+launchers=applications:app.zen_browser.zen.desktop,applications:org.kde.discover.desktop,applications:steam.desktop,applications:md.obsidian.Obsidian.desktop,applications:Aseprite.desktop,applications:Godot Engine.desktop,applications:org.kde.krita.desktop,applications:org.inkscape.Inkscape.desktop,file:///var/lib/flatpak/exports/share/applications/com.icons8.Lunacy.desktop,file:///var/lib/flatpak/exports/share/applications/dev.vencord.Vesktop.desktop,applications:firealpaca.desktop,applications:Blender.desktop,applications:gimp.desktop,file:///var/lib/flatpak/exports/share/applications/com.jetbrains.GoLand.desktop,applications:bruno.desktop
 
 [Containments][30][Applets][166]
 immutability=1
@@ -56,7 +60,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][30][Applets][166][Configuration]
 PreloadWeight=100
-popupHeight=516
+popupHeight=517
 popupWidth=675
 
 [Containments][30][Applets][166][Configuration][ConfigDialog]

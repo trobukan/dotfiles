@@ -8,6 +8,7 @@ local servers = {
   tsserver = { capabilities = capabilities },
   ts_ls = { capabilities = capabilities },
   eslint = { capabilities = capabilities },
+  gopls = { capabilities = capabilities },
   tailwindcss = {
     capabilities = capabilities,
     settings = {

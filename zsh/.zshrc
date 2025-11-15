@@ -60,8 +60,13 @@ setopt hist_ignore_all_dups
 setopt hist_find_no_dups
 
 # > | OTHERS | <
-export PAT="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PGK_CONFIG_PATH="/usr/lib64/pkgconfig:$PGK_CONFIG_PATH"
+export PATH="$PATH:$HOME/.npm-global/bin"
+export N8N_LISTEN_ADDRESS=0.0.0.0
+export PATH="$PATH:$HOME/.local/bin"
+export PATH=$PATH:/usr/share/dotnet
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
