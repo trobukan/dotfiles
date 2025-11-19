@@ -1,4 +1,4 @@
-fastfetch
+ fastfetch
 
 # > | ZINIT CONF | <
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -67,6 +67,7 @@ export PATH="$PATH:$HOME/.npm-global/bin"
 export N8N_LISTEN_ADDRESS=0.0.0.0
 export PATH="$PATH:$HOME/.local/bin"
 export PATH=$PATH:/usr/share/dotnet
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
