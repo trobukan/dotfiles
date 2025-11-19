@@ -1,7 +1,7 @@
 local options = {
 
   base46 = {
-    theme = "aquarium",
+    theme = "monochrome",
     transparency = true,
   },
 

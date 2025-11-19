@@ -2,6 +2,7 @@ require("nvchad.configs.lspconfig").defaults()
 local capabilities = require("blink-cmp").get_lsp_capabilities()
 
 local servers = {
+  jsonls = { capabilities = capabilities },
   clangd = { capabilities = capabilities },
   html = { capabilities = capabilities },
   cssls = { capabilities = capabilities },
