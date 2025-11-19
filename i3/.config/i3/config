@@ -3,8 +3,6 @@
 #
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-#
-
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -48,7 +46,7 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -82,19 +80,15 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-bindsym $mod+semicolon split h
-
-# split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+semicolon split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -150,7 +144,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -160,10 +154,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -179,39 +173,50 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+set $color0 #eee8d5
+set $color1 #1F1F1F
+set $color2 #95596d
+
 # class                 border  bground text    indicator child_border
-client.focused          #F6F6EF #F6F6EF #000000 #F6F6EF   #F6F6EF
-client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
+client.focused          $color0     $color0 #000000   $color0     $color0 
+client.focused_inactive #8C8C8C #4C4C4C $color0   #4C4C4C   #8C8C8C
 client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
-client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+client.urgent           $color2   $color2   $color0   $color2     $color2
+client.placeholder    #000000 #0C0C0C $color0   #000000   #0C0C0C
 
 client.background       #FFFFFF
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-  colors {
-    background #000000
-    statusline #FFFFFF
-    separator  #666666
 
-    focused_workspace  #83CAFA #51A2DA #FFFFFF
-    active_workspace   #3C6EB4 #294172 #FFFFFF
-    inactive_workspace #8C8C8C #4C4C4C #888888
-    urgent_workspace   #EC69A0 #DB3279 #FFFFFF
-    binding_mode       #b691d3 #A07CBC #FFFFFF
-  }
-  status_command i3status
-  position top
+bar {
+    status_command i3status -c ~/.config/i3status/config
+    position top
+    i3bar_command i3bar --transparency
+
+    colors {
+        binding_mode $color2 $color0
+        
+        focused_workspace  $color0 $color1 $color0
+        active_workspace   $color1 $color1 $color1
+        urgent_workspace   $color2 $color2 $color0
+    }
 }
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/Pictures/Wallpapers/default.jpg
+exec_always feh --bg-fill $HOME/Pictures/Wallpapers/default.jpg
 
-# Transparent Terminal
-exec_always picom -f --backend glx
+exec_always picom -f --no-fading-openclose
+
+exec_always --no-startup-id ~/.cargo/bin/glimmer --styles ~/.config/glimmer/default.css
+
+
+default_border pixel 0
 
 # Inner gaps for all windows
 gaps inner 8px
+
+# Thunar
+for_window [title="Thunar"] floating enable
+bindsym $mod+e exec Thunar
 
