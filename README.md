@@ -10,7 +10,7 @@ sudo dnf install -y git stow
 ## Installation
 1. Clone this repository into your `$HOME` directory:
 ```bash
-git clone --recurse-submodules git@github.com:trobukan/dotfiles.git ~/dotfiles
+git clone git@github.com:trobukan/dotfiles.git ~/dotfiles
 ```
 2. Change into the dotfiles directory:
 ```bash
@@ -18,5 +18,5 @@ cd ~/dotfiles
 ```
 3. Apply the dotfiles using stow:
 ```bash
-stow kitty nvim zde fastfetch zsh
+stow <folder>
 ```
