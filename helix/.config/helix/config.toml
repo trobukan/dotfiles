@@ -1,0 +1,12 @@
+theme = "theme"
+
+[editor]
+line-number = "relative"
+mouse = false
+bufferline = "multiple"
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[editor.file-picker]
+hidden = false
