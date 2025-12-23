@@ -1,0 +1,9 @@
+allow_images=false
+hide_scroll=true
+no_actions=false
+term=kitty
+key_up=Ctrl-k
+key_down=Ctrl-j
+mode=drun
+--show
+
