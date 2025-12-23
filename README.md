@@ -3,9 +3,7 @@ These are my personal dotfiles managed with [GNU Stow](https://www.gnu.org/softw
 
 ## Requirements
 Before using these dotfiles, make sure you have the followings packages installed:
-```bash 
-sudo dnf install -y git stow
-```
+`git` `stow`
 
 ## Installation
 1. Clone this repository into your `$HOME` directory:
