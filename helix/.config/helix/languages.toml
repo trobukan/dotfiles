@@ -15,11 +15,15 @@ root_dir = [".git", "*.toml"]
 command = "kdl-lsp"
 
 [[language]]
-name = "toml"
-formatter = { command = "taplo", args = [
-  "format",
-  "--stdin-filepath %{buffer_name}"
+name = "json"
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
 ] }
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["format", "-"] }
 auto-format = true
 
 [[language]]
