@@ -11,6 +11,9 @@ command = "golangci-lint"
 [[language-server.taplo.config]]
 root_dir = [".git", "*.toml"]
 
+[language-server.kdl-lsp]
+command = "kdl-lsp"
+
 [[language]]
 name = "go"
 formatter = { command = "gofmt"}
@@ -18,4 +21,3 @@ formatter = { command = "gofmt"}
 [[language]]
 name = "kdl"
 language-servers = ["kdl-lsp"]
-
