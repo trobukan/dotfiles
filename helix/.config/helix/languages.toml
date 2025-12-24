@@ -1,4 +1,3 @@
-
 [language-server.gopls]
 command = "gopls"
 args = ["-logfile=/tmp/gopls.log", "serve"]
@@ -8,6 +7,9 @@ args = ["-logfile=/tmp/gopls.log", "serve"]
 
 [language-server.golangci-lint-lsp]
 command = "golangci-lint"
+
+[[language-server.taplo.config]]
+root_dir = [".git", "*.toml"]
 
 [[language]]
 name = "go"
