@@ -1,0 +1,12 @@
+[mgr]
+show_hidden = false
+
+[opener]
+editor = [
+  {run = '$EDITOR "$@"', block = true, for = "unix"}
+]
+open = [
+  {run = 'zathura "$@"', block = false, for = "unix"}
+]
+
+
