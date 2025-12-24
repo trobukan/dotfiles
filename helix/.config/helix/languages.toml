@@ -16,11 +16,10 @@ command = "kdl-lsp"
 
 [[language]]
 name = "toml"
-formatter = { command = "tombi", args = [
+formatter = { command = "taplo", args = [
   "format",
-  "--stdin-filename %{buffer_name}"
+  "--stdin-filepath %{buffer_name}"
 ] }
-
 auto-format = true
 
 [[language]]
