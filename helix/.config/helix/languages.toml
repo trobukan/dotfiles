@@ -15,8 +15,17 @@ root_dir = [".git", "*.toml"]
 command = "kdl-lsp"
 
 [[language]]
+name = "toml"
+formatter = { command = "tombi", args = [
+  "format",
+  "--stdin-filename %{buffer_name}"
+] }
+
+auto-format = true
+
+[[language]]
 name = "go"
-formatter = { command = "gofmt"}
+formatter = { command = "gofmt" }
 
 [[language]]
 name = "kdl"
