@@ -14,6 +14,7 @@ alias hx=helix
 # PATHS
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Env
 export TERM=kitty
