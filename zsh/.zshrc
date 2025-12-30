@@ -10,6 +10,7 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 # Aliases
 alias hx=helix
+alias vim=nvim
 
 # PATHS
 export PATH=$PATH:$HOME/.cargo/bin
@@ -20,8 +21,8 @@ export PATH=$PATH:$HOME/.local/bin
 export TERM=kitty
 export BROWSER=zen-browser
 export GTK_THEME=Materia-dark
-export EDITOR=$(which helix)
-export SUDO_EDITOR=$(which helix)
+export EDITOR=$(which nvim)
+export SUDO_EDITOR=$(which nvim)
 
 # Init Zoxide
 eval "$(zoxide init --cmd cd zsh)"
@@ -39,3 +40,10 @@ function y() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# pnpm
+export PNPM_HOME="/home/trobukan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
