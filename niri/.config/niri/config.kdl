@@ -7,9 +7,10 @@
 input {
     keyboard {
         xkb {
-            layout "us" // Use the German keyboard layout
+            layout "us, es" 
+            options "grp:alt_shift_toggle"
         }
-        numlock // Enable numlock on startup
+        numlock 
     }
 
     touchpad {
