@@ -20,7 +20,6 @@ export PATH=$PATH:$HOME/.local/bin
 # Env
 export TERM=kitty
 export BROWSER=zen-browser
-export GTK_THEME=Materia-dark
 export EDITOR=$(which nvim)
 export SUDO_EDITOR=$(which nvim)
 

@@ -20,11 +20,11 @@ return {
     "mason.nvim",
     opts = {
       ensure_installed = {
+        "templ",
         "stylua",
         "shfmt",
         "gopls",
         "gofumpt",
-        "goimports",
       },
     },
   },
@@ -32,6 +32,8 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        "make",
+        "templ",
         "bash",
         "html",
         "javascript",
