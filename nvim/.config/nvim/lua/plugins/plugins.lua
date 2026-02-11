@@ -1,5 +1,37 @@
 return {
   {
+    "folke/snacks.nvim",
+    opts = {
+      explorer = {
+        replace_netrw = true,
+      },
+      picker = {
+        sources = {
+          explorer = {
+            exclude = { "*.uid", "*.import" },
+          },
+        },
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        gdscript = {},
+      },
+    },
+  },
+  {
+
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        gdscript = { "gdformat", "lsp" },
+      },
+    },
+  },
+  {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
@@ -32,6 +64,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        "gdscript",
         "make",
         "templ",
         "bash",
