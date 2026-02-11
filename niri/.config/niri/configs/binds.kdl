@@ -2,6 +2,7 @@ binds {
     MOD+SHIFT+ESCAPE                     { show-hotkey-overlay; }
 
     // | > Applications < | 
+    MOD+P                               repeat=false {spawn-sh "~/Projects/love/menu";}
     MOD+RETURN                          repeat=false hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
     MOD+SPACE                           repeat=false hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
     MOD+B                               repeat=false hotkey-overlay-title="Open Browser: zen browser" { spawn-sh "zen-browser"; }

@@ -17,7 +17,6 @@ include "configs/layout.kdl"
 include "configs/rules.kdl"
 
 // | > Others < |
-
 cursor {
     hide-when-typing
     hide-after-inactive-ms 2000
@@ -40,6 +39,7 @@ environment {
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
+    EDITOR "nvim"
 }
 
 hotkey-overlay {
