@@ -1,4 +1,4 @@
-@define-color gruv-blue rgba(90, 147, 216, 0.8);
+@define-color gruv-white rgba(216, 222, 228, 0.8);
 @define-color gruv-red rgba(204, 36, 29, 0.8);
 
 @define-color text-white rgba(255, 255, 255, 0.9);
@@ -14,7 +14,7 @@
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: @text-white;
   transition-property: background-color;
   border-radius: 0px 5px 5px 0px;
@@ -27,7 +27,7 @@ button {
 
 button:hover {
   background: inherit;
-  box-shadow: inset 2px 0px @gruv-blue;
+  box-shadow: inset 2px 0px @gruv-white;
 }
 
 #custom-powerbutton,
@@ -56,12 +56,8 @@ window#waybar.empty #window {
   opacity: 0;
 }
 
-#clock {
-  box-shadow: inset 2px 0 @gruv-blue;
-}
-
 #clock:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
 }
 
@@ -69,14 +65,9 @@ window#waybar.empty #clock {
   border-radius: 0 0 20px 0;
 }
 
-#pulseaudio,
-#pulseaudio-slider {
-  box-shadow: inset 2px 0px @gruv-blue;
-}
-
 #pulseaudio.muted:hover,
 #pulseaudio:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   transition-duration: .5s;
   background-color: @hover-black;
 }
@@ -109,17 +100,12 @@ window#waybar.empty #clock {
 }
 
 #pulseaudio-slider:hover highlight {
-  background: @gruv-blue;
+  background: @gruv-white;
 }
 
 #backlight:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#backlight,
-#backlight-slider {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #backlight-slider slider {
@@ -145,31 +131,22 @@ window#waybar.empty #clock {
 }
 
 #backlight-slider:hover highlight {
-  background: @gruv-blue;
+  background: @gruv-white;
 }
 
 #battery:hover,
 #battery.charging:hover,
 #battery.plugged:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   transition-duration: .5s;
   background-color: @hover-black;
 }
 
-#battery,
-#battery.charging,
-#battery.plugged {
-  box-shadow: inset 2px 0px @gruv-blue;
-}
-
 #window:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
 }
 
-#window {
-  box-shadow: inset 2px 0px @gruv-blue;
-}
 
 #taskbar button {
   padding: 5px 0;
@@ -177,25 +154,18 @@ window#waybar.empty #clock {
 
 #taskbar button.active {
   background: @mute-black;
-  box-shadow: inset 2px 0px @gruv-blue;
+  box-shadow: inset 2px 0px @gruv-white;
 }
 
 #custom-appmenu:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
 }
 
-#custom-appmenu {
-  box-shadow: inset 2px 0px @gruv-blue;
-}
 
 #custom-powerbutton:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-powerbutton {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 window#waybar.empty #custom-powerbutton {
@@ -203,48 +173,28 @@ window#waybar.empty #custom-powerbutton {
 }
 
 #custom-reboot:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-reboot {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #custom-suspend:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-suspend {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #custom-lock:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-lock {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #custom-idlekiller:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-idlekiller {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #user:hover {
   color: @gruv-green;
   background-color: @hover-black;
-}
-
-#user {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #taskbar,
@@ -270,7 +220,7 @@ window#waybar.empty #custom-powerbutton {
 }
 
 #workspaces button.active:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
 }
 
 #workspaces button:hover {
@@ -279,21 +229,17 @@ window#waybar.empty #custom-powerbutton {
 
 #workspaces button.focused {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 2px 0px @gruv-blue;
+  box-shadow: inset 2px 0px @gruv-white;
 }
 
 #workspaces button.urgent {
-  background-color: @gruv-blue;
+  background-color: @gruv-white;
   border-radius: 10px;
 }
 
 #custom-playpause:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
-}
-
-#custom-playpause {
-  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #network.disconnected {
@@ -301,10 +247,10 @@ window#waybar.empty #custom-powerbutton {
 }
 
 #custom-wallpaper:hover {
-  color: @gruv-blue;
+  color: @gruv-white;
   background-color: @hover-black;
 }
 
 #custom-wallpaper {
-  box-shadow: inset 2px 0px @gruv-blue;
+  box-shadow: inset 2px 0px @gruv-white;
 }

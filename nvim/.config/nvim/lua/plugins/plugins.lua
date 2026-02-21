@@ -8,7 +8,10 @@ return {
       picker = {
         sources = {
           explorer = {
+            root = false,
             exclude = { "*.uid", "*.import" },
+            follow_file = true,
+            hidden = true,
           },
         },
       },
