@@ -1,12 +1,10 @@
 binds {
-    MOD+SHIFT+ESCAPE                     { show-hotkey-overlay; }
+    MOD+SHIFT+RETURN                     { show-hotkey-overlay; }
 
     // | > Applications < | 
-    MOD+P                               repeat=false {spawn-sh "~/Projects/love/menu";}
     MOD+RETURN                          repeat=false hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
     MOD+SPACE                           repeat=false hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
     MOD+B                               repeat=false hotkey-overlay-title="Open Browser: zen browser" { spawn-sh "zen-browser"; }
-    MOD+ALT+L                           repeat=false hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
     
     MOD+E { spawn-sh "kitty -e yazi"; }
 
@@ -25,22 +23,14 @@ binds {
     // | > Windows Focus & Movements < | 
     MOD+Q                               { close-window; }
 
-    MOD+LEFT                            { focus-column-left; }
     MOD+H                               { focus-column-left; }
-    MOD+RIGHT                           { focus-column-right; }
     MOD+L                               { focus-column-right; }
-    MOD+UP                              { focus-window-up; }
     MOD+K                               { focus-window-up; }
-    MOD+DOWN                            { focus-window-down; }
     MOD+J                               { focus-window-down; }
 
-    MOD+SHIFT+LEFT                       { move-column-left; }
     MOD+SHIFT+H                          { move-column-left; }
-    MOD+SHIFT+RIGHT                      { move-column-right; }
     MOD+SHIFT+L                          { move-column-right; }
-    MOD+SHIFT+UP                         { move-window-up; }
     MOD+SHIFT+K                          { move-window-up; }
-    MOD+SHIFT+DOWN                       { move-window-down; }
     MOD+SHIFT+J                          { move-window-down; }
 
     MOD+HOME                            { focus-column-first; }

@@ -1,6 +1,6 @@
 window-rule {
-    match app-id=r#"zen-browser$"# title="^Picture-in-Picture$"
-    open-floating true // Always float Zen Browser PiP windows
+  match app-id=r#"zen-browser$"# title="^Picture-in-Picture$"
+  open-floating true 
 }
 
 window-rule {
@@ -9,11 +9,12 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 8 
-    clip-to-geometry true
-    draw-border-with-background false
+  geometry-corner-radius 5
+  clip-to-geometry true
+  draw-border-with-background false
 }
 
 layer-rule {
     place-within-backdrop true
 }
+
