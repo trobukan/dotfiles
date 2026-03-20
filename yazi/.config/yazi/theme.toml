@@ -1,3 +1,4 @@
+[mgr]
 
-[flavor]
-dark = "kanagawa"
+find_keyword = { fg = "blue", bg = "white", reversed = true }
+border_style = { fg = "blue" }

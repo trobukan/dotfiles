@@ -1,6 +1,6 @@
 layout {
-    gaps 10 // Gap between windows
-    center-focused-column "never" // Don’t auto-center focused column
+    gaps 10 
+    center-focused-column "never" 
     background-color "transparent"
 
     preset-column-widths {
@@ -10,7 +10,7 @@ layout {
     }
     focus-ring {
         width 2
-        active-color "#D8DEE480"
+        active-color "#5a93d8"
         inactive-color "#505050"
     }
 
@@ -20,6 +20,4 @@ layout {
         offset x=0 y=5
         color "#0007"
     }
-
-    struts {}
 }

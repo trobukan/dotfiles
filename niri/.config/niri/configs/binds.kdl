@@ -1,16 +1,11 @@
 binds {
     MOD+SHIFT+RETURN                     { show-hotkey-overlay; }
-
-    // | > Applications < | 
     MOD+RETURN                          repeat=false { spawn-sh "kitty"; }
     MOD+SPACE                           repeat=false { spawn-sh "kitty --app-id=launcher  fsel -d"; }
     MOD+B                               repeat=false hotkey-overlay-title="Open Browser: zen browser" { spawn-sh "zen-browser"; }
     
     MOD+E { spawn-sh "kitty --app-id=yazi yazi"; }
 
-    // | > Audio Controls < |
-    // Example volume keys mappings for PipeWire & WirePlumber.
-    // The allow-when-locked=true property makes them work even when the session is locked.
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute                       allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
@@ -20,7 +15,6 @@ binds {
     XF86AudioPlay                       allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPrev                       allow-when-locked=true { spawn-sh "playerctl previous"; }
 
-    // | > Windows Focus & Movements < | 
     MOD+Q                               { close-window; }
 
     MOD+H                               { focus-column-left; }
@@ -38,7 +32,6 @@ binds {
     MOD+CTRL+HOME                       { move-column-to-first; }
     MOD+CTRL+END                        { move-column-to-last; }
 
-    // | > Workspace Switching < |
     MOD+WHEELSCROLLDOWN                 cooldown-ms=150 { focus-workspace-down; }
     MOD+WHEELSCROLLUP                   cooldown-ms=150 { focus-workspace-up; }
     MOD+CTRL+WHEELSCROLLDOWN            cooldown-ms=150 { move-column-to-workspace-down; }
@@ -76,7 +69,6 @@ binds {
 
     MOD+TAB                             { focus-workspace-previous; }
 
-    // | > Layout Controls < |
     MOD+SHIFT+F                          { expand-column-to-available-width; }
     MOD+C                               { center-column; }
     MOD+SHIFT+C                          { center-visible-columns; }
@@ -85,24 +77,17 @@ binds {
     MOD+SHIFT+MINUS                     { set-window-height "-10%"; }
     MOD+SHIFT+EQUAL                     { set-window-height "+10%"; }
 
-    // | > Modes < |
     MOD+T                               { toggle-window-floating; }
     MOD+F                               { fullscreen-window; }
-    MOD+W                               { toggle-column-tabbed-display; }
 
-    // | > Screenshots < |
     Print {screenshot;}
     CTRL+SHIFT+1                        { screenshot; }
     CTRL+SHIFT+2                        { screenshot-screen; }
     CTRL+SHIFT+3                        { screenshot-window; }
 
-    // | > Emergency Escape Key < |
-    // Use this when a fullscreen app blocks your keybinds.
-    // It disables any active keyboard shortcut inhibitor, restoring control.
     MOD+ESCAPE                          allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    // | > Exit / Power < |
-    CTRL+ALT+DELETE                     { quit; } // Also quits Niri
-    MOD+SHIFT+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
+    CTRL+ALT+DELETE                     { quit; } 
+    MOD+SHIFT+P                         { power-off-monitors; } 
     MOD+O                               repeat=false { toggle-overview; }
   }

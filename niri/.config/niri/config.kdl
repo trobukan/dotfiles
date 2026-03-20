@@ -1,22 +1,10 @@
-// | > Input Settings < |
 include "configs/input.kdl"
-
-// | > Keybinds Settings < |
 include "configs/binds.kdl"
-
-// | > Startup Applications < |
 include "configs/startup.kdl"
-
-// | > Animations Settings < |
 include "configs/animations.kdl"
-
-// | > Layout Settings < |
 include "configs/layout.kdl"
-
-// | > Rules Settings < |
 include "configs/rules.kdl"
 
-// | > Others < |
 cursor {
     hide-when-typing
     hide-after-inactive-ms 2000
@@ -28,10 +16,9 @@ gestures {
     }
 }
 
-prefer-no-csd 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H:%M:%S.png"
+prefer-no-csd 
 
-// | > Environment Variables < | 
 environment {
     DISPLAY ":1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"

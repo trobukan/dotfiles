@@ -1,22 +1,16 @@
 input {
     keyboard {
         xkb {
-            layout "us, es" 
-            options "grp:alt_shift_toggle"
+            layout "us, es, pt" 
+            options ""
         }
         numlock 
     }
 
-    touchpad {
-        tap // Enable tap-to-click
-        natural-scroll // Enable natural (macOS-style) scrolling
-    }
-
-    // focus-follows-mouse // Automatically focus windows under the mouse pointer
-    workspace-auto-back-and-forth // Enable workspace back & forth switching
+    workspace-auto-back-and-forth 
 }
 
  output "HDMI-A-1" {
-    mode "1920x1080@74.973" // Set resolution and refresh rate
-    scale 1 // No scaling (use 2 for HiDPI)
+    mode "1920x1080@74.973" 
+    scale 1 
 }
