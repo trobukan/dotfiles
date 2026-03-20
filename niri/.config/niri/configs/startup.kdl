@@ -2,4 +2,3 @@
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
     spawn-sh-at-startup "swww img /usr/share/wallpapers/rennala.png" // Set wallpaper
     spawn-sh-at-startup "waybar" // Launch waybar
-    spawn-sh-at-startup "~/.config/niri/notify-layout-change.sh"
