@@ -1,5 +1,6 @@
 @define-color gruv-white rgba(216, 222, 228, 0.8);
 @define-color gruv-red rgba(204, 36, 29, 0.8);
+@define-color gruv-blue rgba(90, 147, 216, 0.8);
 
 @define-color text-white rgba(255, 255, 255, 0.9);
 
@@ -27,7 +28,7 @@ button {
 
 button:hover {
   background: inherit;
-  box-shadow: inset 2px 0px @gruv-white;
+  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #custom-powerbutton,
@@ -57,7 +58,7 @@ window#waybar.empty #window {
 }
 
 #clock:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -67,7 +68,7 @@ window#waybar.empty #clock {
 
 #pulseaudio.muted:hover,
 #pulseaudio:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   transition-duration: .5s;
   background-color: @hover-black;
 }
@@ -100,11 +101,11 @@ window#waybar.empty #clock {
 }
 
 #pulseaudio-slider:hover highlight {
-  background: @gruv-white;
+  background: @gruv-blue;
 }
 
 #backlight:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -131,19 +132,19 @@ window#waybar.empty #clock {
 }
 
 #backlight-slider:hover highlight {
-  background: @gruv-white;
+  background: @gruv-blue;
 }
 
 #battery:hover,
 #battery.charging:hover,
 #battery.plugged:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   transition-duration: .5s;
   background-color: @hover-black;
 }
 
 #window:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -154,17 +155,17 @@ window#waybar.empty #clock {
 
 #taskbar button.active {
   background: @mute-black;
-  box-shadow: inset 2px 0px @gruv-white;
+  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #custom-appmenu:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
 
 #custom-powerbutton:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -173,22 +174,22 @@ window#waybar.empty #custom-powerbutton {
 }
 
 #custom-reboot:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
 #custom-suspend:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
 #custom-lock:hover {
-  color: @gruv-white;
+  color: @gruv-blue; 
   background-color: @hover-black;
 }
 
 #custom-idlekiller:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -220,7 +221,7 @@ window#waybar.empty #custom-powerbutton {
 }
 
 #workspaces button.active:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
 }
 
 #workspaces button:hover {
@@ -229,16 +230,16 @@ window#waybar.empty #custom-powerbutton {
 
 #workspaces button.focused {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 2px 0px @gruv-white;
+  box-shadow: inset 2px 0px @gruv-blue;
 }
 
 #workspaces button.urgent {
-  background-color: @gruv-white;
+  background-color: @gruv-blue;
   border-radius: 10px;
 }
 
 #custom-playpause:hover {
-  color: @gruv-white;
+  color: @gruv-blue;
   background-color: @hover-black;
 }
 
@@ -246,11 +247,4 @@ window#waybar.empty #custom-powerbutton {
   background-color: @gruv-red;
 }
 
-#custom-wallpaper:hover {
-  color: @gruv-white;
-  background-color: @hover-black;
-}
 
-#custom-wallpaper {
-  box-shadow: inset 2px 0px @gruv-white;
-}
