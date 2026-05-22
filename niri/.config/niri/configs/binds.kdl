@@ -1,8 +1,6 @@
 binds {
-    MOD+SHIFT+RETURN                     { show-hotkey-overlay; }
-    MOD+RETURN                          repeat=false { spawn-sh "kitty"; }
-    MOD+SPACE                           repeat=false { spawn-sh "kitty --app-id=launcher  fsel -d"; }
-    MOD+B                               repeat=false hotkey-overlay-title="Open Browser: zen browser" { spawn-sh "zen-browser"; }
+    MOD+RETURN                          repeat=false { spawn "kitty"; }
+    MOD+SPACE                           repeat=false { spawn "fuzzel"; }
     
     MOD+E { spawn-sh "kitty --app-id=yazi yazi"; }
 

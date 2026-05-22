@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 24,
+  "height": 26,
   "spacing": 7,
   "modules-left": [
     "niri/workspaces"
@@ -11,54 +11,36 @@
   ],
   "modules-right": [
     "niri/language",
-    "memory",
     "pulseaudio",
+    "memory",
     "network"
   ],
   "niri/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": "\uf444",
-      "default": "\uf4c3"
-    },
+    "format": "[{value}]",
     "sort-by-number": true
   },
   "niri/language": {
-    "format": "{short}"
+    "format": "[{short}]"
   },
   "clock": {
-    "format": "{:%d.%m.%Y | %H:%M}"
+    "format": "[{:%d.%m.%Y | %H:%M}]"
   },
   "pulseaudio": {
-    "format": "\udb81\udd7e {volume}%",
+    "format": "[audio {volume}%]",
     "max-volume": 100,
     "scroll-step": 5
   },
   "memory": {
     "interval": 1,
-    "format": "\uf4bc {percentage}% "
+    "format": "[ram {percentage}%]"
   },
   "network": {
     "format": "",
-    "format-ethernet": "\udb83\udc9d",
+    "format-ethernet": "[lan on]",
     "format-wifi": "{icon}",
-    "format-disconnected": "\udb83\udc9c",
-    "format-icons": [
-      "\udb82\udd2f",
-      "\udb82\udd1f",
-      "\udb82\udd22",
-      "\udb82\udd25",
-      "\udb82\udd28"
-    ],
+    "format-disconnected": "[net off]",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname}",
     "tooltip-format-disconnected": "Disconnected",
-  },
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "\udb80\udd76",
-      "deactivated": "\udb83\udfaa"
-    }
   }
 }
