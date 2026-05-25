@@ -7,6 +7,7 @@ vim.pack.add({
 	gh("nvim-mini/mini.nvim"),
 	gh("stevearc/conform.nvim"),
 	gh("mason-org/mason.nvim"),
+	gh("ingur/floatty.nvim"),
 })
 
 require("mason").setup({})
@@ -14,3 +15,7 @@ require("mason").setup({})
 require("plugins.lsp")
 require("plugins.mini")
 require("plugins.conform")
+
+local Plugins = {}
+Plugins.floatty = require("floatty").setup({})
+return Plugins

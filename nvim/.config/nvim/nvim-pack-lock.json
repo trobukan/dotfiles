@@ -12,6 +12,10 @@
       "rev": "668a6199990ba64f81f7df8ac32958412ef00db3",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "floatty.nvim": {
+      "rev": "e82ae3bbe46b8e28918bcf7b9f3d5c36304e0c9f",
+      "src": "https://github.com/ingur/floatty.nvim"
+    },
     "mason.nvim": {
       "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -35,6 +39,10 @@
     "nvim-lspconfig": {
       "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "runner-nvim": {
+      "rev": "fff7bc209c0c1effa17c326eed3a2a64939ee009",
+      "src": "https://github.com/TheLazyCat00/runner-nvim"
     }
   }
 }

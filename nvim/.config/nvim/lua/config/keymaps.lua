@@ -11,3 +11,11 @@ vim.keymap.set({ "n" }, "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>e", function()
 	vim.cmd("lua MiniFiles.open()")
 end)
+
+vim.keymap.set("n", "<C-/>", function()
+	require("plugins").floatty.toggle()
+end)
+
+vim.keymap.set("t", "<C-/>", function()
+	require("plugins").floatty.toggle()
+end)
