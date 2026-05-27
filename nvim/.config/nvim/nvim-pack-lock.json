@@ -40,9 +40,17 @@
       "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
     "runner-nvim": {
       "rev": "fff7bc209c0c1effa17c326eed3a2a64939ee009",
       "src": "https://github.com/TheLazyCat00/runner-nvim"
+    },
+    "tree-sitter-manager.nvim": {
+      "rev": "8c8b9c5a154e33c565baa2f4562eb50056df8f5b",
+      "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     }
   }
 }

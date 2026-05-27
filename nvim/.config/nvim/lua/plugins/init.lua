@@ -8,9 +8,19 @@ vim.pack.add({
 	gh("stevearc/conform.nvim"),
 	gh("mason-org/mason.nvim"),
 	gh("ingur/floatty.nvim"),
+	gh("romus204/tree-sitter-manager.nvim"),
 })
 
 require("mason").setup({})
+require("tree-sitter-manager").setup({
+	ensure_installed = {
+		"html",
+		"go",
+		"gomod",
+		"gotmpl",
+		"css",
+	},
+})
 
 require("plugins.lsp")
 require("plugins.mini")

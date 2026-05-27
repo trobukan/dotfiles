@@ -8,7 +8,6 @@ vim.keymap.set({ "n" }, "<C-l>", "<C-w>l")
 
 vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write" })
 vim.keymap.set("n", "<leader>q", ":quit<CR>", { desc = "Quit" })
-vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Update" })
 
 vim.keymap.set("n", "<leader>e", function()
 	vim.cmd("lua MiniFiles.open()")
