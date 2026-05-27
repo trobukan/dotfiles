@@ -1,4 +1,3 @@
-require("mini.files").setup({})
 require("mini.statusline").setup({})
 require("mini.starter").setup({})
 require("mini.completion").setup({})
@@ -6,6 +5,8 @@ require("mini.notify").setup({})
 require("mini.icons").setup({
 	style = "ascii",
 })
+require("mini.pairs").setup({})
+require("mini.pick").setup({})
 
 local miniclue = require("mini.clue")
 miniclue.setup({
@@ -52,6 +53,9 @@ miniclue.setup({
 	},
 })
 
-require("mini.pairs").setup({})
+local M = {}
 
-require("mini.pick").setup({})
+M.files = require("mini.files")
+M.files.setup({})
+
+return M

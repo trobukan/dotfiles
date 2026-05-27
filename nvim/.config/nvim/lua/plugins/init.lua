@@ -23,9 +23,9 @@ require("tree-sitter-manager").setup({
 })
 
 require("plugins.lsp")
-require("plugins.mini")
 require("plugins.conform")
 
 local Plugins = {}
 Plugins.floatty = require("floatty").setup({})
+Plugins.mini = require("plugins.mini")
 return Plugins
