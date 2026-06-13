@@ -9,6 +9,15 @@ vim.pack.add({
 	gh("mason-org/mason.nvim"),
 	gh("ingur/floatty.nvim"),
 	gh("romus204/tree-sitter-manager.nvim"),
+
+	-- Golang
+	gh("romus204/go-tagger.nvim"),
+})
+
+require("go-tagger").setup({
+	skip_private = true,
+	casing = "snake_case",
+	tags = {},
 })
 
 require("mason").setup({})

@@ -16,6 +16,10 @@
       "rev": "e82ae3bbe46b8e28918bcf7b9f3d5c36304e0c9f",
       "src": "https://github.com/ingur/floatty.nvim"
     },
+    "go-tagger.nvim": {
+      "rev": "8fb11cdda459d2336c6312d9dfb2108f250b95e2",
+      "src": "https://github.com/romus204/go-tagger.nvim"
+    },
     "mason.nvim": {
       "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
       "src": "https://github.com/mason-org/mason.nvim"
