@@ -1,4 +1,4 @@
 [mgr]
 
-find_keyword = { fg = "blue", bg = "white", reversed = true }
-border_style = { fg = "blue" }
+find_keyword = { fg = "#859285", bg = "#859285", reversed = true }
+border_style = { fg = "#859285" }

@@ -6,6 +6,10 @@ require("conform").setup({
 			"gofumpt",
 			"golines",
 		},
+		json = { "biome" },
+		javascript = { "biome" },
+		typescript = { "biome" },
+		c = { "clangd" },
 	},
 	format_on_save = {
 		timeout_ms = 500,

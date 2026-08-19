@@ -1,53 +1,21 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = '''
-$directory$git_status$git_branch$golang$lua
+$directory$git_status
 $character'''
 add_newline = true
 scan_timeout = 50
 
 [directory]
 read_only = " ro"
-style = "bold blue"
+style = "white"
 
 [character]
-success_symbol = "[*](bold blue)"
+success_symbol = "[*](white)"
 error_symbol = "[*](bold red)"
-
-[git_commit]
-tag_symbol = " tag "
-
-[git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
-
-[docker_context]
-symbol = "docker "
-format = '\[[$symbol$context]($style)\]'
-
-[git_branch]
-symbol = "git "
-truncation_symbol = "..."
-format = '\[[$symbol$branch]($style)\]'
-
-[golang]
-symbol = "go "
-format = '\[[$symbol($version)]($style)\]'
-
-[lua]
-symbol = "lua "
-format = '\[[$symbol($version)]($style)\]'
-
-[os]
-format = '\[[$symbol]($style)\]'
 
 [username]
 format = '\[[$user]($style)\]'
 
-[os.symbols]
-Void = "void "
 
 

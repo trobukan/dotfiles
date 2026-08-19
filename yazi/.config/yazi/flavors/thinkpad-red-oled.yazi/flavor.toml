@@ -2,13 +2,11 @@
 
 [mgr]
 cwd = { fg = "#b9162a", bold = true }
-find_keyword = { fg = "#b9162a", italic = true, bold = true }
 find_position = { fg = "#b9162a", bg = "reset", italic = true }
 marker_copied = { fg = "#dcdcdc", bg = "#222222" }
-marker_cut = { fg = "#b9162a", bg = "#b9162a" }
+marker_cut = { fg = "#859285", bg = "#b9162a" }
 marker_selected = { fg = "#b9162a", bg = "#b9162a" }
 border_symbol = "│"
-border_style = { fg = "#222222" }
 
 [tabs]
 active = { fg = "#000000", bg = "#b9162a", bold = true }

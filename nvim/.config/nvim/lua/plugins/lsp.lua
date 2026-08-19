@@ -21,4 +21,4 @@ vim.lsp.config["lua_ls"] = {
 	},
 }
 
-vim.lsp.enable({ "lua_ls", "gopls" })
+vim.lsp.enable({ "lua_ls", "gopls", "biome", "ts_ls", "clangd" })

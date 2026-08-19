@@ -1,5 +1,13 @@
 {
   "plugins": {
+    "Oshen": {
+      "rev": "cc69305a7fdbc78452316bc90ae33c342b5d6f7f",
+      "src": "https://github.com/54L1M/Oshen.nvim"
+    },
+    "Oshen.nvim": {
+      "rev": "cc69305a7fdbc78452316bc90ae33c342b5d6f7f",
+      "src": "https://github.com/54L1M/Oshen.nvim"
+    },
     "catppuccin": {
       "rev": "8edd468af4d63212b84d69b2ddb5ffc9023ef5eb",
       "src": "https://github.com/catppuccin/nvim"
@@ -11,6 +19,10 @@
     "conform.nvim": {
       "rev": "668a6199990ba64f81f7df8ac32958412ef00db3",
       "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "everforest": {
+      "rev": "85a86eb62409e3ec88713bff3d1b9d7374e112e4",
+      "src": "https://github.com/sainnhe/everforest"
     },
     "floatty.nvim": {
       "rev": "e82ae3bbe46b8e28918bcf7b9f3d5c36304e0c9f",
@@ -36,6 +48,10 @@
       "rev": "a7d8b353cf120fee32bb5d88e7a9de5eaec746e7",
       "src": "https://github.com/nvim-mini/mini.starter"
     },
+    "moonfly": {
+      "rev": "261664f92ed51cf0c077555b2d4b2530307eac17",
+      "src": "https://github.com/bluz71/vim-moonfly-colors"
+    },
     "nvim": {
       "rev": "8edd468af4d63212b84d69b2ddb5ffc9023ef5eb",
       "src": "https://github.com/catppuccin/nvim"
@@ -47,6 +63,10 @@
     "nvim-treesitter": {
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "rasmus": {
+      "rev": "49f7ee7bf3eb00db52c77f84b15bc69f318bafc1",
+      "src": "https://github.com/kvrohit/rasmus.nvim"
     },
     "runner-nvim": {
       "rev": "fff7bc209c0c1effa17c326eed3a2a64939ee009",
