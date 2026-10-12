@@ -1,19 +1,38 @@
-local gh = function(x)
-	return "https://github.com/" .. x
+local path_package = vim.fn.stdpath("data") .. "/site/"
+local mini_path = path_package .. "pack/deps/start/mini.nvim"
+
+-- > | BootStrap
+if not vim.loop.fs_stat(mini_path) then
+	vim.cmd('echo "Installing `mini.nvim`" | redraw')
+	local clone_cmd = {
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/nvim-mini/mini.nvim",
+		mini_path,
+	}
+	vim.fn.system(clone_cmd)
+	vim.cmd("packadd mini.nvim | helptags ALL")
+	vim.cmd('echo "Installed `mini.nvim`" | redraw')
 end
 
-vim.pack.add({
-	gh("neovim/nvim-lspconfig"),
-	gh("nvim-mini/mini.nvim"),
-	gh("stevearc/conform.nvim"),
-	gh("mason-org/mason.nvim"),
-	gh("ingur/floatty.nvim"),
-	gh("romus204/tree-sitter-manager.nvim"),
+-- > | Start mini.deps
+local MiniDeps = require("mini.deps")
+MiniDeps.setup({ path = { package = path_package } })
 
-	-- Golang
-	gh("romus204/go-tagger.nvim"),
-})
+local add = MiniDeps.add
 
+-- > | Plugins
+add({ source = "kvrohit/rasmus.nvim", name = "rasmus" })
+add({ source = "neovim/nvim-lspconfig" })
+add({ source = "stevearc/conform.nvim" })
+add({ source = "mason-org/mason.nvim" })
+add({ source = "ingur/floatty.nvim" })
+add({ source = "romus204/tree-sitter-manager.nvim" })
+
+add({ source = "romus204/go-tagger.nvim" })
+
+-- > | Plugins Config
 require("go-tagger").setup({
 	skip_private = true,
 	casing = "snake_case",
@@ -33,8 +52,9 @@ require("tree-sitter-manager").setup({
 
 require("plugins.lsp")
 require("plugins.conform")
+require("config.theme")
 
-local Plugins = {}
-Plugins.floatty = require("floatty").setup({})
-Plugins.mini = require("plugins.mini")
-return Plugins
+return {
+	floatty = require("floatty").setup({}),
+	mini = require("plugins.mini"),
+}
