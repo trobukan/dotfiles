@@ -18,6 +18,7 @@ gestures {
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H:%M:%S.png"
 prefer-no-csd 
+
 hotkey-overlay {
     skip-at-startup
 }

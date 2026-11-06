@@ -8,6 +8,13 @@ require("mini.icons").setup({
 require("mini.pairs").setup({})
 require("mini.pick").setup({})
 
+local hipatterns = require("mini.hipatterns")
+hipatterns.setup({
+	highlighters = {
+		hex_color = hipatterns.gen_highlighter.hex_color(),
+	},
+})
+
 local miniclue = require("mini.clue")
 miniclue.setup({
 	window = {

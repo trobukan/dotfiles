@@ -1,23 +1,17 @@
 layout {
-    gaps 10 
+    gaps 16
     center-focused-column "never" 
     background-color "transparent"
 
     preset-column-widths {
-        proportion 0.33333
+        proportion 0.3
         proportion 0.5
-        proportion 0.66667
+        proportion 0.6
     }
     focus-ring {
+				off	
         width 2
-        active-color "cfd3d3"
+        active-color "#8a6a52"
         inactive-color "#505050"
-    }
-
-    shadow {
-        softness 30
-        spread 5
-        offset x=0 y=5
-        color "#0007"
     }
 }

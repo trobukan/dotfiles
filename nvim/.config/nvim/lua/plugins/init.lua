@@ -23,7 +23,7 @@ MiniDeps.setup({ path = { package = path_package } })
 local add = MiniDeps.add
 
 -- > | Plugins
-add({ source = "kvrohit/rasmus.nvim", name = "rasmus" })
+
 add({ source = "neovim/nvim-lspconfig" })
 add({ source = "stevearc/conform.nvim" })
 add({ source = "mason-org/mason.nvim" })
@@ -32,7 +32,15 @@ add({ source = "romus204/tree-sitter-manager.nvim" })
 
 add({ source = "romus204/go-tagger.nvim" })
 
+-- > | Themes
+add({ source = "lanteignel93/spacecowboy.nvim" }) -- spacecowboy
+
 -- > | Plugins Config
+
+require("spacecowboy").setup({
+	transparent = true,
+})
+
 require("go-tagger").setup({
 	skip_private = true,
 	casing = "snake_case",
@@ -55,6 +63,10 @@ require("plugins.conform")
 require("config.theme")
 
 return {
-	floatty = require("floatty").setup({}),
+	floatty = require("floatty").setup({
+		window = {
+			border = "single",
+		},
+	}),
 	mini = require("plugins.mini"),
 }

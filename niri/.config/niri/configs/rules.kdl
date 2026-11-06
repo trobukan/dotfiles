@@ -3,13 +3,12 @@ window-rule {
     geometry-corner-radius 0
     clip-to-geometry true
     draw-border-with-background false
-
 }
 
-// Kitty
+
 window-rule {
-	match app-id="kitty"
-	opacity 0.99
+	match is-active=false
+	opacity 0.96
 }
 
 // Xray false
@@ -17,7 +16,7 @@ window-rule {
     match is-floating=true
 
     background-effect {
-        xray true 
+        xray true
     }
 }
 // Love2D
